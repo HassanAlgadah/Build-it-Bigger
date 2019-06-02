@@ -15,8 +15,6 @@ import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
-import static android.support.test.espresso.matcher.ViewMatchers.withText;
-import static org.junit.Assert.assertNotNull;
 
 import java.util.concurrent.TimeUnit;
 
@@ -28,7 +26,6 @@ import org.junit.runner.RunWith;
 @LargeTest
 
 public class EndpointsAsyncTaskTestUnit extends AndroidTestCase{
-    String TAG = EndpointsAsyncTaskTest.class.getSimpleName();
    @Rule
     public ActivityTestRule<MainActivity> mActivityRule =
             new ActivityTestRule(MainActivity.class);
